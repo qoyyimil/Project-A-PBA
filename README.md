@@ -103,6 +103,7 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 **a. EDA Tahap Awal dan Audit Kualitas Data**
 <img width="1465" height="583" alt="image" src="https://github.com/user-attachments/assets/823843d3-833d-4a61-85cb-1d0d20204760" />
 - Visualisasi diatas menunjukkan dominasi Stopwords ("the", "and") merupakan frekuensi besar stopword yang tidak memiliki makna kontekstual terhadap analisis sentimen.
+  
 <img width="1392" height="416" alt="image" src="https://github.com/user-attachments/assets/35ed2b83-bd24-400f-ab75-dd16df47470a" />
 - Analisis menunjukkan variasi ekstrem dalam panjang artikel (min 55 kata, maks 3.133 kata, rata-rata 819 kata), yang memerlukan Padding dan Truncation yang tepat pada model BERT.
 
@@ -111,8 +112,10 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 <img width="1071" height="418" alt="image" src="https://github.com/user-attachments/assets/c8d42d18-117d-4811-9fb7-6e6d821b45c5" />
 - Visualisasi di atas menunjukkan kata-kata umum (noise) seperti "the" dan "and" tidak lagi muncul.
 - Kata-kata yang paling dominan saat ini adalah yang relevan dengan topik, yaitu "uber" (2.378 kali) dan "driver" (1.277 kali). Hal ini mengonfirmasi data yang dihasilkan bersih dan kontekstual.
+
 <img width="1424" height="407" alt="image" src="https://github.com/user-attachments/assets/8fe72815-b17b-4bee-9b53-a203021209f1" />
 - Terjadi penurunan signifikan dalam panjang rata-rata teks (dari 819 kata menjadi 408 kata), dengan distribusi yang lebih seragam. Hal ini membuat teks lebih efisien dan konsisten untuk diproses oleh model DistilBERT.
+
 
 
 **4. Data Labelling**
@@ -127,6 +130,8 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 
 **b. Hasil Analisis Sentimen setelah Labelling**
 <img width="1350" height="413" alt="image" src="https://github.com/user-attachments/assets/d022a36e-4148-4698-ad7f-fb764e657355" />
+- Konsentrasi Topik: Pemberitaan sangat terfokus pada topik Tech (107 artikel/62.6%) dan Business (24 artikel/14.0%).
+- Sentimen Dominan: Meskipun POSITIF adalah sentimen mayoritas di kedua topik utama (misalnya, 69 Positif pada topik Tech), terdapat volume NEGATIF yang signifikan (38 Negatif pada topik Tech).
 
 **5. Data Splitting**
 | Set Data | Jumlah Data | Proporsi | Sentimen Positif (%) | Sentimen Negatif (%) |
@@ -143,6 +148,9 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 | **Total** | **119** | **152** |
 
 **7. Implementation BERT**
+- Model & Data Input: Model DistilBertForSequenceClassification (distilbert-base-uncased) berhasil dimuat dan menerima data latih yang sudah di-tokenize dan di-batch (batch size 16) sesuai dengan format PyTorch Tensors.
+- Konfirmasi Pelatihan: Proses Fine-Tuning berhasil dieksekusi selama 4 Epoch dengan Optimizer AdamW (Learning Rate $2e-5$).
+- Output: Pelatihan menghasilkan weights model yang telah diperbarui dan siap diukur kemampuan generalisasinya pada tahap evaluasi berikutnya.
 
 **8. Evaluation**
 
@@ -162,9 +170,12 @@ b. Hasil Pengujian pada Data Uji
 | **Accuracy** | | | 0.77 | 26 |
 | **Macro Avg** | 0.76 | 0.76 | 0.76 | 26 |
 | **Weighted Avg** | 0.77 | 0.77 | 0.77 | 26 |
+- Model mencapai akurasi keseluruhan sebesar 77% (20 dari 26 artikel diklasifikasikan dengan benar).
 
 <img width="640" height="547" alt="image" src="https://github.com/user-attachments/assets/486e5f7d-9901-42ae-8460-955db5c4a9d1" />
-
+- Model menunjukkan kinerja yang stabil dan tidak bias berkat Data Balancing:
+F1-Score Positif: 0.81 dan F1-Score Negatif: 0.70
+- Jumlah kesalahan False Positive (3 kasus) dan False Negative (3 kasus) adalah seimbang, yang mengonfirmasi bahwa model tidak memiliki kecenderungan bias terhadap salah satu kelas sentimen.
 
 ## 📈 Kesimpulan dan Saran
 **1. Kesimpulan**
