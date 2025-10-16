@@ -102,7 +102,8 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 
 a. EDA Tahap Awal dan Audit Kualitas Data
 
-<img src="[URL_GAMBAR_1]" width="49%" alt="Word Cloud Raw Data dan Top 20 Kata Mentah" /> <img src="[URL_GAMBAR_2]" width="49%" alt="Word Cloud Filtered Content dan Top 100 Kata Bersih" />
+<img width="672" height="273" alt="image" src="https://github.com/user-attachments/assets/b940483e-4dde-47b6-b768-597982d45ee1" />
+
 
 
 **4. Data Labelling**
