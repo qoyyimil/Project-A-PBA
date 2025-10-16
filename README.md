@@ -17,6 +17,7 @@ Proyek ini bertujuan mengklasifikasikan sentimen berita mengenai Uber menggunaka
 
 
 **1. Data Scraping**
+
 Tahap ini berfokus pada pengumpulan dataset teks dari sumber berita internasional terpercaya.
 - Target Data: 171 artikel berita berbahasa Inggris mengenai Uber.
 - Sumber Data: Tiga portal berita internasional kredibel: CNN, CNBC, dan NBC News.
