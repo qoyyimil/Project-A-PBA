@@ -19,10 +19,10 @@ Proyek ini bertujuan mengklasifikasikan sentimen berita mengenai Uber menggunaka
 **1. Data Scraping**
 
 Tahap ini berfokus pada pengumpulan dataset teks dari sumber berita internasional terpercaya.
-- Target Data: 171 artikel berita berbahasa Inggris mengenai Uber.
-- Sumber Data: Tiga portal berita internasional kredibel yaitu CNN, CNBC, dan NBC News.
-- Strategi Pencarian: Menggunakan Operator Pencarian Google (site:www.cnn.com "Uber") untuk memastikan artikel yang dikumpulkan relevan dan spesifik dari masing-masing portal berita.
-- Metode: Dilakukan menggunakan teknik Web Scraping dengan bahasa pemrograman Python (memanfaatkan libraries seperti requests dan beautifulsoup4).
+a. Target Data: 171 artikel berita berbahasa Inggris mengenai Uber.
+b. Sumber Data: Tiga portal berita internasional kredibel yaitu CNN, CNBC, dan NBC News.
+c. Strategi Pencarian: Menggunakan Operator Pencarian Google (site:www.cnn.com "Uber") untuk memastikan artikel yang dikumpulkan relevan dan spesifik dari masing-masing portal berita.
+d. Metode: Dilakukan menggunakan teknik Web Scraping dengan bahasa pemrograman Python (memanfaatkan libraries seperti requests dan beautifulsoup4).
 
 **2. Preprocessing**
 
@@ -45,6 +45,9 @@ b. Validasi Pasca-Preprocessing
 - Metode: Menganalisis kembali frekuensi kata (Word Cloud dan Bar Chart) pada data bersih untuk memastikan "Uber" dan kata kunci relevan lainnya mendominasi. Analisis ini juga memverifikasi konsistensi panjang teks setelah dibersihkan.
 
 **4. Data Labelling**
+
+Tahap ini memberikan label sentimen (ground truth) pada data yang bersih secara cepat dan objektif.
+Metode Utama: Menggunakan algoritma berbasis leksikon VADER (Valence Aware Dictionary and sEntiment Reasoner) dari pustaka NLTK.Mekanisme: VADER menganalisis teks untuk menghasilkan compound score yang mencerminkan polaritas emosi keseluruhan.Aturan Klasifikasi:POSITIF: Compound Score $\ge 0.05$NEGATIF: Compound Score $\le -0.05$(Teks netral di antara ambang batas tidak diikutsertakan dalam pemodelan biner).
 
 **5. Data Splitting**
 
