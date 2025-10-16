@@ -1,4 +1,5 @@
-# Project-A-PBA : Analisis Sentimen Artikel Berita Uber menggunakan Fine-Tuning DistilBERT
+# 🚀 PROJECT-A-PBA: ANALISIS SENTIMEN ARTIKEL BERITA UBER
+**Pengolahan Bahasa Alami (A) - Semester Ganjil 2025/2026**
 Kelompok 6 - PBA
 | Nama Lengkap | NIM |
 | :--- | :--- |
