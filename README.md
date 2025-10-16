@@ -1,4 +1,4 @@
-# Project-A-PBA
+# Project-A-PBA : Analisis Sentimen Artikel Berita Uber menggunakan Fine-Tuning DistilBERT
 Kelompok 6 - PBA
 | Nama Lengkap | NIM |
 | :--- | :--- |
