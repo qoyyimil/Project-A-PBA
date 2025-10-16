@@ -15,3 +15,25 @@ Proyek ini bertujuan mengklasifikasikan sentimen berita mengenai Uber menggunaka
 ## ⚙️ Metode Penelitian
 ![4](https://github.com/user-attachments/assets/54d97a26-b24d-40a7-b699-d140bd873888)
 
+**1. Data Scraping
+**2. Preprocessing
+**3. EDA (Exploratory Data Analysis)
+**4. Data Labelling
+**5. Data Splitting
+**6. Data Balancing
+**7. Implementation BERT
+**8. Evaluation
+
+## ✅ Hasil dan Pembahasan
+**1. Data Scraping
+**2. Preprocessing
+**3. EDA (Exploratory Data Analysis)
+**4. Data Labelling
+**5. Data Splitting
+**6. Data Balancing
+**7. Implementation BERT
+**8. Evaluation
+
+## 📈 Kesimpulan dan Saran
+**1. Kesimpulan
+**2. Saran
