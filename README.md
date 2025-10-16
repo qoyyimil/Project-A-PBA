@@ -180,7 +180,6 @@ F1-Score Positif: 0.81 dan F1-Score Negatif: 0.70
 **c. Analisis Kesalahan (Error Analysis)**
 
 Analisis kualitatif terhadap kasus kesalahan prediksi model mengungkapkan dua pola kelemahan utama:
-### Tabel Analisis Kesalahan (*Error Analysis*)
 
 | Pola Kelemahan Model | Deskripsi Singkat | Tipe Kesalahan yang Dominan |
 | :--- | :--- | :---: |
