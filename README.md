@@ -50,17 +50,48 @@ Tahap ini memberikan label sentimen (ground truth) pada data yang bersih secara 
 - Metode Utama: Menggunakan algoritma berbasis leksikon VADER (Valence Aware Dictionary and sEntiment Reasoner) dari pustaka NLTK.
 - Mekanisme: VADER menganalisis teks untuk menghasilkan compound score yang mencerminkan polaritas emosi keseluruhan.
 - Aturan Klasifikasi:
-POSITIF: Compound Score $\ge 0.05$;
-NEGATIF: Compound Score $\le -0.05$;
+Positif dengan Compound Score $\ge 0.05$;
+Negatif dengan Compound Score $\le -0.05$;
 Teks netral di antara ambang batas tidak diikutsertakan dalam pemodelan biner
 
 **5. Data Splitting**
 
+Rasio Pembagian:
+- Data Latih (Training): 70%
+- Data Validasi (Validation): 15%
+- Data Uji (Test): 15%
+
 **6. Data Balancing**
+
+Tahap ini bertujuan mencegah bias model yang timbul dari ketidakseimbangan jumlah sampel antar kelas (Positif vs. Negatif).
+- Masalah: Data Latih mengalami class imbalance (Positif mayoritas, Negatif minoritas).
+- Metode: Menerapkan teknik Augmentasi Data dengan Penggantian Sinonim (Synonym Replacement).
+- Prosedur Kunci: Augmentasi dilakukan secara eksklusif pada Data Latih kelas minoritas hingga mencapai rasio 1:1.
+- Tujuan: Menghasilkan data latih yang seimbang secara artifisial, memungkinkan model DistilBERT mempelajari karakteristik kedua kelas sentimen secara setara.
 
 **7. Implementation BERT**
 
+Tahap ini merupakan inti pemodelan menggunakan Transfer Learning dari arsitektur Transformer.
+
+a. Model Utama: DistilBertForSequenceClassification (distilbert-base-uncased).
+
+b. Persiapan Data Khusus BERT:
+- Tokenisasi: Teks dipecah dan dikonversi menjadi ID numerik menggunakan DistilBertTokenizer.
+- Normalisasi Input: Panjang sequence diseragamkan (max_length=128) menggunakan Padding dan Truncation.
+- Batching: Data diubah menjadi PyTorch Tensors dan disajikan per batch (ukuran 16) melalui DataLoader.
+
+c. Proses Pelatihan (Fine-Tuning):
+- Tujuan: Memperbarui weights model pra-terlatih agar spesifik mengenali sentimen berita Uber.
+- Hyperparameter Kunci: Dilatih selama 4 Epoch, menggunakan Optimizer AdamW dengan Learning Rate $2e-5$.
+- Kontrol Kualitas: Evaluasi dilakukan pada data validasi di setiap epoch untuk memantau loss dan mencegah overfitting.
+
 **8. Evaluation**
+
+Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum pernah dilihat model untuk menilai kemampuan generalisasi model. Matrix kunci nya yaitu: 
+- Accuracy: Persentase prediksi yang benar secara keseluruhan.
+- Precision & Recall: Mengukur ketepatan dan sensitivitas model pada setiap kelas.
+- F1-Score: Rata-rata harmonik Precision dan Recall, krusial untuk data dengan kelas yang tidak seimbang.
+- Confusion Matrix: Memvisualisasikan jenis kesalahan yang dibuat model (TP, TN, FP, FN).
 
 ## ✅ Hasil dan Pembahasan
 **1. Data Scraping**
