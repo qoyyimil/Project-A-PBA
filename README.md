@@ -17,6 +17,11 @@ Proyek ini bertujuan mengklasifikasikan sentimen berita mengenai Uber menggunaka
 
 
 **1. Data Scraping**
+Tahap ini berfokus pada pengumpulan dataset teks dari sumber berita internasional terpercaya.
+- Target Data: 171 artikel berita berbahasa Inggris mengenai Uber.
+- Sumber Data: Tiga portal berita internasional kredibel: CNN, CNBC, dan NBC News.
+- Metode: Dilakukan menggunakan teknik Web Scraping dengan bahasa pemrograman Python (memanfaatkan libraries seperti requests dan beautifulsoup4).
+- Tujuan: Mengekstraksi judul dan isi artikel secara otomatis untuk dijadikan dataset utama analisis sentimen, dengan penambahan delay antar permintaan untuk menjaga etika pengambilan data.
 
 **2. Preprocessing**
 
