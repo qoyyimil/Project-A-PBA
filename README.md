@@ -95,15 +95,17 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 
 ## ✅ Hasil dan Pembahasan
 **1. Data Scraping**
+<img width="1622" height="616" alt="image" src="https://github.com/user-attachments/assets/de59476c-6034-4fec-8585-0fc5dedddbdc" />
 
-**2. Preprocessing**
-
-**3. EDA (Exploratory Data Analysis)**
+**2. EDA (Exploratory Data Analysis) Hasil Pre-processing**
 
 a. EDA Tahap Awal dan Audit Kualitas Data
-
 <img width="672" height="273" alt="image" src="https://github.com/user-attachments/assets/b940483e-4dde-47b6-b768-597982d45ee1" />
 <img width="841" height="470" alt="image" src="https://github.com/user-attachments/assets/f4e1feec-85d9-4845-ba85-2e349449f883" />
+
+b. Validasi Pra-pemrosesan dan Analisis Fitur Teks
+<img width="1071" height="418" alt="image" src="https://github.com/user-attachments/assets/c8d42d18-117d-4811-9fb7-6e6d821b45c5" />
+<img width="859" height="476" alt="image" src="https://github.com/user-attachments/assets/40174fb4-8286-4c56-b9d4-753cb989e21b" />
 
 **4. Data Labelling**
 
