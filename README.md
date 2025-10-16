@@ -110,7 +110,7 @@ b. Validasi Pra-pemrosesan dan Analisis Fitur Teks
 **4. Data Labelling**
 
 a. Distribusi Label Sentimen
-<img width="694" height="660" alt="image" src="https://github.com/user-attachments/assets/40ce3003-f9f5-410d-a957-243fbd578713" />
+<img width="857" height="387" alt="image" src="https://github.com/user-attachments/assets/45e2035f-74d7-435c-aaef-5dcf54f5b23b" />
 
 b. Hasil Analisis Sentimen setelah Labelling
 <img width="989" height="590" alt="download (9)" src="https://github.com/user-attachments/assets/6733eae9-7b85-44b1-92bf-21b581189937" />
