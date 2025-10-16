@@ -118,8 +118,10 @@ b. Hasil Analisis Sentimen setelah Labelling
 <img width="1350" height="413" alt="image" src="https://github.com/user-attachments/assets/d022a36e-4148-4698-ad7f-fb764e657355" />
 
 **5. Data Splitting**
+<img width="1001" height="245" alt="image" src="https://github.com/user-attachments/assets/5a4ca5e0-e210-4d12-9a0d-e905863d5c5f" />
 
 **6. Data Balancing**
+<img width="988" height="260" alt="image" src="https://github.com/user-attachments/assets/b081e32d-1c3e-4635-9617-b64ff4dcc095" />
 
 **7. Implementation BERT**
 
