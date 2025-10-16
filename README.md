@@ -100,7 +100,7 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 **2. EDA (Exploratory Data Analysis) Hasil Pre-processing**
 
 a. EDA Tahap Awal dan Audit Kualitas Data
-<img width="672" height="273" alt="image" src="https://github.com/user-attachments/assets/b940483e-4dde-47b6-b768-597982d45ee1" />
+<img width="1465" height="583" alt="image" src="https://github.com/user-attachments/assets/823843d3-833d-4a61-85cb-1d0d20204760" />
 <img width="841" height="470" alt="image" src="https://github.com/user-attachments/assets/f4e1feec-85d9-4845-ba85-2e349449f883" />
 
 b. Validasi Pra-pemrosesan dan Analisis Fitur Teks
@@ -108,6 +108,13 @@ b. Validasi Pra-pemrosesan dan Analisis Fitur Teks
 <img width="859" height="476" alt="image" src="https://github.com/user-attachments/assets/40174fb4-8286-4c56-b9d4-753cb989e21b" />
 
 **4. Data Labelling**
+
+a. Distribusi Label Sentimen
+<img width="694" height="660" alt="image" src="https://github.com/user-attachments/assets/40ce3003-f9f5-410d-a957-243fbd578713" />
+
+b. Hasil Analisis Sentimen setelah Labelling
+<img width="989" height="590" alt="download (9)" src="https://github.com/user-attachments/assets/6733eae9-7b85-44b1-92bf-21b581189937" />
+
 
 **5. Data Splitting**
 
