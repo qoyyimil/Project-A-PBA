@@ -118,14 +118,42 @@ b. Hasil Analisis Sentimen setelah Labelling
 <img width="1350" height="413" alt="image" src="https://github.com/user-attachments/assets/d022a36e-4148-4698-ad7f-fb764e657355" />
 
 **5. Data Splitting**
-<img width="1001" height="245" alt="image" src="https://github.com/user-attachments/assets/5a4ca5e0-e210-4d12-9a0d-e905863d5c5f" />
+| Set Data | Jumlah Data | Proporsi | Sentimen Positif (%) | Sentimen Negatif (%) |
+| :--- | :---: | :---: | :---: | :---: |
+| Training | 119 | 70% | 63.87 | 36.13 |
+| Validation | 26 | 15% | 65.38 | 34.62 |
+| Test | 26 | 15% | 61.54 | 38.46 |
 
 **6. Data Balancing**
-<img width="988" height="260" alt="image" src="https://github.com/user-attachments/assets/b081e32d-1c3e-4635-9617-b64ff4dcc095" />
+| Label Sentimen | Jumlah Sebelum Augmentasi | Jumlah Sesudah Augmentasi |
+| :--- | :---: | :---: |
+| Positif | 76 | 76 |
+| Negatif | 43 | 76 |
+| **Total** | **119** | **152** |
 
 **7. Implementation BERT**
 
 **8. Evaluation**
+
+a. Hasil Pelatihan dan Validasi
+| Epoch | Train Loss | Train Accuracy | Validation Loss | Validation Accuracy |
+| :---: | :---: | :---: | :---: | :---: |
+| 1 | 0.6831 | 60.53% | 0.6647 | 73.08% |
+| 2 | 0.6288 | 80.92% | 0.5885 | 80.77% |
+| 3 | 0.5517 | 76.32% | 0.5198 | 80.77% |
+| 4 | 0.5062 | 80.26% | 0.4902 | 80.77% |
+
+b. Hasil Pengujian pada Data Uji
+| Kelas/Metrik | Precision | Recall | F1-Score | Support |
+| :--- | :---: | :---: | :---: | :---: |
+| **NEGATIF** | 0.70 | 0.70 | 0.70 | 10 |
+| **POSITIF** | 0.81 | 0.81 | 0.81 | 16 |
+| **Accuracy** | | | 0.77 | 26 |
+| **Macro Avg** | 0.76 | 0.76 | 0.76 | 26 |
+| **Weighted Avg** | 0.77 | 0.77 | 0.77 | 26 |
+
+<img width="640" height="547" alt="image" src="https://github.com/user-attachments/assets/486e5f7d-9901-42ae-8460-955db5c4a9d1" />
+
 
 ## 📈 Kesimpulan dan Saran
 **1. Kesimpulan**
