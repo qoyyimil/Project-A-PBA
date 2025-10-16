@@ -103,8 +103,7 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 a. EDA Tahap Awal dan Audit Kualitas Data
 
 <img width="672" height="273" alt="image" src="https://github.com/user-attachments/assets/b940483e-4dde-47b6-b768-597982d45ee1" />
-
-
+<img width="841" height="470" alt="image" src="https://github.com/user-attachments/assets/f4e1feec-85d9-4845-ba85-2e349449f883" />
 
 **4. Data Labelling**
 
