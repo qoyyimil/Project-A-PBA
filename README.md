@@ -50,11 +50,8 @@ Tahap ini memberikan label sentimen (ground truth) pada data yang bersih secara 
 - Metode Utama: Menggunakan algoritma berbasis leksikon VADER (Valence Aware Dictionary and sEntiment Reasoner) dari pustaka NLTK.
 - Mekanisme: VADER menganalisis teks untuk menghasilkan compound score yang mencerminkan polaritas emosi keseluruhan.
 - Aturan Klasifikasi:
-
-POSITIF: Compound Score $\ge 0.05$
-
-NEGATIF: Compound Score $\le -0.05$
-
+POSITIF: Compound Score $\ge 0.05$;
+NEGATIF: Compound Score $\le -0.05$;
 Teks netral di antara ambang batas tidak diikutsertakan dalam pemodelan biner
 
 **5. Data Splitting**
