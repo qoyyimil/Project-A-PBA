@@ -95,13 +95,16 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 
 ## ✅ Hasil dan Pembahasan
 **1. Data Scraping**
+- Hasil dari scraping artikel 
 <img width="1622" height="616" alt="image" src="https://github.com/user-attachments/assets/de59476c-6034-4fec-8585-0fc5dedddbdc" />
 
 **2. EDA (Exploratory Data Analysis) Hasil Pre-processing**
 
 a. EDA Tahap Awal dan Audit Kualitas Data
 <img width="1465" height="583" alt="image" src="https://github.com/user-attachments/assets/823843d3-833d-4a61-85cb-1d0d20204760" />
+- Visualisasi Word Cloud dan Diagram Batang menunjukkan dominasi Stopwords ("the", "and") merupakan frekuensi besar stopword yang tidak memiliki makna kontekstual terhadap analisis sentimen.
 <img width="1392" height="416" alt="image" src="https://github.com/user-attachments/assets/35ed2b83-bd24-400f-ab75-dd16df47470a" />
+- Analisis menunjukkan variasi ekstrem dalam panjang artikel (min 55 kata, maks 3.133 kata, rata-rata 819 kata), yang memerlukan Padding dan Truncation yang tepat pada model BERT.
 
 
 b. Validasi Pra-pemrosesan dan Analisis Fitur Teks
