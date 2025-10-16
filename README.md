@@ -136,6 +136,10 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 - Konsentrasi Topik: Pemberitaan sangat terfokus pada topik Tech (107 artikel/62.6%) dan Business (24 artikel/14.0%).
 - Sentimen Dominan: Meskipun POSITIF adalah sentimen mayoritas di kedua topik utama (misalnya, 69 Positif pada topik Tech), terdapat volume NEGATIF yang signifikan (38 Negatif pada topik Tech).
 
+**c. WorlCloud Distribusi Kata tiap Sentimen**
+<img width="1103" height="304" alt="image" src="https://github.com/user-attachments/assets/caa462e6-18a5-44bc-998c-ecad0d6eb957" />
+- WordCloud dan distribusi kata pada artikel positif dan negatif memberikan insight naratif yang berbeda.
+
 **4. Data Splitting**
 | Set Data | Jumlah Data | Proporsi | Sentimen Positif (%) | Sentimen Negatif (%) |
 | :--- | :---: | :---: | :---: | :---: |
