@@ -101,11 +101,13 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 
 a. EDA Tahap Awal dan Audit Kualitas Data
 <img width="1465" height="583" alt="image" src="https://github.com/user-attachments/assets/823843d3-833d-4a61-85cb-1d0d20204760" />
-<img width="841" height="470" alt="image" src="https://github.com/user-attachments/assets/f4e1feec-85d9-4845-ba85-2e349449f883" />
+<img width="1392" height="416" alt="image" src="https://github.com/user-attachments/assets/35ed2b83-bd24-400f-ab75-dd16df47470a" />
+
 
 b. Validasi Pra-pemrosesan dan Analisis Fitur Teks
 <img width="1071" height="418" alt="image" src="https://github.com/user-attachments/assets/c8d42d18-117d-4811-9fb7-6e6d821b45c5" />
-<img width="859" height="476" alt="image" src="https://github.com/user-attachments/assets/40174fb4-8286-4c56-b9d4-753cb989e21b" />
+<img width="1424" height="407" alt="image" src="https://github.com/user-attachments/assets/8fe72815-b17b-4bee-9b53-a203021209f1" />
+
 
 **4. Data Labelling**
 
@@ -113,8 +115,7 @@ a. Distribusi Label Sentimen
 <img width="857" height="387" alt="image" src="https://github.com/user-attachments/assets/45e2035f-74d7-435c-aaef-5dcf54f5b23b" />
 
 b. Hasil Analisis Sentimen setelah Labelling
-<img width="989" height="590" alt="download (9)" src="https://github.com/user-attachments/assets/6733eae9-7b85-44b1-92bf-21b581189937" />
-
+<img width="1350" height="413" alt="image" src="https://github.com/user-attachments/assets/d022a36e-4148-4698-ad7f-fb764e657355" />
 
 **5. Data Splitting**
 
