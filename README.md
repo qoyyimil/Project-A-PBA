@@ -100,6 +100,11 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 
 **3. EDA (Exploratory Data Analysis)**
 
+a. EDA Tahap Awal dan Audit Kualitas Data
+
+<img width="790" height="429" alt="image" src="https://github.com/user-attachments/assets/267b8c0e-6c84-43fd-acd3-7d0003305091" /> <img width="880" height="707" alt="image" src="https://github.com/user-attachments/assets/e8926810-c96e-4544-9ff6-21674cbf1971" />
+
+
 **4. Data Labelling**
 
 **5. Data Splitting**
