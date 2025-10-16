@@ -99,6 +99,7 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 <img width="1622" height="616" alt="image" src="https://github.com/user-attachments/assets/de59476c-6034-4fec-8585-0fc5dedddbdc" />
 
 
+
 **2. EDA (Exploratory Data Analysis) Hasil Pre-processing**
 
 **a. EDA Tahap Awal dan Audit Kualitas Data**
@@ -116,10 +117,10 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 - Kata-kata yang paling dominan saat ini adalah yang relevan dengan topik, yaitu "uber" (2.378 kali) dan "driver" (1.277 kali). Hal ini mengonfirmasi data yang dihasilkan bersih dan kontekstual.
 
 <img width="1424" height="407" alt="image" src="https://github.com/user-attachments/assets/8fe72815-b17b-4bee-9b53-a203021209f1" />
+
 - Terjadi penurunan signifikan dalam panjang rata-rata teks (dari 819 kata menjadi 408 kata), dengan distribusi yang lebih seragam. Hal ini membuat teks lebih efisien dan konsisten untuk diproses oleh model DistilBERT.
 
-
-
+  
 **3. Data Labelling**
 
 **a. Distribusi Label Sentimen**
@@ -175,9 +176,11 @@ Basis evaluasi dilakukan pada data uji (Test Set) yang merupakan data yang belum
 - Model mencapai akurasi keseluruhan sebesar 77% (20 dari 26 artikel diklasifikasikan dengan benar).
 
 <img width="640" height="547" alt="image" src="https://github.com/user-attachments/assets/486e5f7d-9901-42ae-8460-955db5c4a9d1" />
-- Model menunjukkan kinerja yang stabil dan tidak bias berkat Data Balancing:
+
+* Model menunjukkan kinerja yang stabil dan tidak bias berkat Data Balancing:
 F1-Score Positif: 0.81 dan F1-Score Negatif: 0.70
-- Jumlah kesalahan False Positive (3 kasus) dan False Negative (3 kasus) adalah seimbang, yang mengonfirmasi bahwa model tidak memiliki kecenderungan bias terhadap salah satu kelas sentimen.
+* Jumlah kesalahan False Positive (3 kasus) dan False Negative (3 kasus) adalah seimbang, yang mengonfirmasi bahwa model tidak memiliki kecenderungan bias terhadap salah satu kelas sentimen.
+
 
 **c. Analisis Kesalahan (Error Analysis)**
 
@@ -190,19 +193,19 @@ Analisis kualitatif terhadap kasus kesalahan prediksi model mengungkapkan dua po
 
 ## 📈 Kesimpulan dan Saran
 **1. Kesimpulan**
-- Model DistilBERT terbukti efektif untuk tugas klasifikasi sentimen pada domain berita, mencapai Akurasi keseluruhan 77% pada data uji.
-- Teknik Synonym Replacement berperan krusial dalam mengatasi class imbalance. Hasilnya, model menunjukkan kinerja yang seimbang (F1-Score 0.81 untuk Positif dan 0.70 untuk Negatif).
-- Analisis kesalahan mengonfirmasi keterbatasan model dalam memahami konteks sentimen yang ambigu/campuran (positif muncul sebagai respons terhadap masalah negatif).
+- DistilBERT efektif untuk klasifikasi sentimen berita, akurasi 77%.
+- Synonym Replacement berhasil mengatasi class imbalance (F1: 0.81 Positif, 0.70 Negatif).
+- Model masih lemah dalam memahami konteks sentimen ambigu.
 
 **2. Insight**
-- Berita korporat seringkali tidak monolitik (Positif/Negatif). Insight dari Error Analysis menunjukkan perlunya analisis yang melampaui level dokumen untuk mendapatkan pemahaman yang benar-benar berguna bagi bisnis.
-- Keberhasilan model ringan (DistilBERT) membuktikan bahwa untuk aplikasi bisnis, model yang lebih efisien sudah mampu memberikan gambaran sentimen yang andal dengan biaya komputasi yang jauh lebih rendah daripada model skala besar.
-- Penggunaan VADER sebagai alat pelabelan otomatis awal adalah strategi yang sangat pragmatis dan efektif untuk proyek dengan sumber daya terbatas, menghasilkan ground truth yang memadai untuk melatih model deep learning yang canggih.
+- Sentimen berita korporat sering bersifat campuran, perlu analisis lebih mendalam.
+- Model ringan seperti DistilBERT cukup efisien dan andal untuk aplikasi bisnis.
+- VADER efektif sebagai pelabel otomatis awal pada proyek dengan sumber daya terbatas.
 
 **3. Saran**
-- Disarankan beralih ke Aspect-Based Sentiment Analysis (ABSA) untuk mengatasi sentimen campuran, yaitu mengidentifikasi sentimen terhadap aspek spesifik (misalnya, sentimen NEGATIF terhadap 'keamanan' dalam satu artikel).
-- Membuat gold-standard dataset kecil dengan anotasi manual (human annotators) untuk memvalidasi akurasi VADER dan meningkatkan keandalan ground truth.
-- Bereksperimen dengan model Transformer yang lebih besar (misalnya, RoBERTa) yang berpotensi memiliki pemahaman nuansa bahasa yang lebih baik dan dapat meningkatkan performa pada kasus-kasus sulit.
+- Terapkan Aspect-Based Sentiment Analysis (ABSA) untuk kasus sentimen campuran.
+- Buat dataset anotasi manual guna validasi dan peningkatan ground truth.
+- Uji model yang lebih besar (mis. RoBERTa) untuk pemahaman konteks yang lebih baik.
 
 ## 🔧 Tools dan Teknologi
 - **Bahasa Pemrograman:** Python
