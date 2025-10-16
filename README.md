@@ -1,7 +1,8 @@
-# 🚀 PROJECT-A-PBA: ANALISIS SENTIMEN ARTIKEL BERITA UBER
-**Pengolahan Bahasa Alami (A) - Semester Ganjil 2025/2026**
+# 🚀 PROJECT-A-PBA : ANALISIS SENTIMEN ARTIKEL BERITA UBER
 
-## 🧑‍💻 Anggota Kelompok 6
+## 🎯 Judul : Analisis Sentimen Artikel Berita Mengenai Uber Menggunakan Fine-Tuning Model DistilBERT dengan Teknik Data Augmentation
+
+## 🧑‍💻 Anggota Kelompok 6 - PBA
 | Nama Lengkap | NIM |
 | :--- | :--- |
 | **Sintiarani Febyan Putri** | `5026221044` |
