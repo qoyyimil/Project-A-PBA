@@ -51,8 +51,8 @@ Tahap ini memberikan label sentimen (ground truth) pada data yang bersih secara 
 - **Metode Utama:** Menggunakan algoritma berbasis leksikon **VADER** (*Valence Aware Dictionary and sEntiment Reasoner*) dari pustaka NLTK.  
 - **Mekanisme:** VADER menganalisis teks untuk menghasilkan *compound score* yang mencerminkan polaritas emosi keseluruhan.  
 - **Aturan Klasifikasi:**  
-  - **Positif** dengan *Compound Score* `$\ge 0.05$`  
-  - **Negatif** dengan *Compound Score* `$\le -0.05$`  
+  - **Positif** dengan *Compound Score* `≥ 0.05`  
+  - **Negatif** dengan *Compound Score* `≤ -0.05`  
   - Teks **netral** di antara ambang batas **tidak diikutsertakan** dalam pemodelan biner
 
 ### **5. Data Splitting**
@@ -105,7 +105,7 @@ Basis evaluasi dilakukan pada data uji (**Test Set**) yang merupakan data yang b
 - Visualisasi di atas menunjukkan dominasi *stopwords* (**"the"**, **"and"**) merupakan frekuensi besar *stopword* yang tidak memiliki makna kontekstual terhadap analisis sentimen.
 
 <img width="1392" height="416" alt="image" src="https://github.com/user-attachments/assets/35ed2b83-bd24-400f-ab75-dd16df47470a" />  
-- Analisis menunjukkan variasi ekstrem dalam panjang artikel (min **55 kata**, maks **3.133 kata**, rata-rata **819 kata**), yang memerlukan **Padding** dan **Truncation** yang tepat pada model BERT.
+- Analisis menunjukkan variasi ekstrem dalam panjang artikel (min 55 kata, maks 3.133 kata, rata-rata 819 kata), yang memerlukan Padding dan Truncation yang tepat pada model BERT.
 
 **b. Validasi Pra-pemrosesan dan Analisis Fitur Teks**  
 <img width="1071" height="418" alt="image" src="https://github.com/user-attachments/assets/c8d42d18-117d-4811-9fb7-6e6d821b45c5" />  
@@ -113,7 +113,7 @@ Basis evaluasi dilakukan pada data uji (**Test Set**) yang merupakan data yang b
 - Kata-kata yang paling dominan saat ini adalah yang relevan dengan topik, yaitu **"uber" (2.378 kali)** dan **"driver" (1.277 kali)**. Hal ini mengonfirmasi data yang dihasilkan bersih dan kontekstual.
 
 <img width="1424" height="407" alt="image" src="https://github.com/user-attachments/assets/8fe72815-b17b-4bee-9b53-a203021209f1" />  
-- Terjadi penurunan signifikan dalam panjang rata-rata teks (dari **819 kata** menjadi **408 kata**), dengan distribusi yang lebih seragam. Hal ini membuat teks lebih efisien dan konsisten untuk diproses oleh model DistilBERT.
+- Terjadi penurunan signifikan dalam panjang rata-rata teks (dari 819 kata menjadi 408 kata), dengan distribusi yang lebih seragam. Hal ini membuat teks lebih efisien dan konsisten untuk diproses oleh model DistilBERT.
 
 ### **3. Data Labelling**
 
